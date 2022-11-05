@@ -1,5 +1,5 @@
 <center>
-  <img src="grande-logo.png" name="Macca Computer Logo">
+  <img src="grande-logo.png" name="Macca Computer Logo" width="500px">
   <p>NEW HOMEPAGE</p>
 </center>
 

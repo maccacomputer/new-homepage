@@ -1,13 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard - Macca Computer</title>
+    <style>
+        @font-face {
+            font-family: dos;
+            src: url(../product/unix4ds/DOS69_win.ttf);
+        }
+        * {
+            font-family: dos;
+        }
+
+        body {
+            background-color: #000000;
+        }
+
+        .header {
+            color: #00ff00;
+        }
+
+        .left {
+            float: left;
+            width: 20%;
+            text-align: center;
+            font-size: 28px;
+            padding-top: 200px;
+        }
+
+        .right {
+            float: right;
+            width: 80%;
+            color: #00ff00;
+            padding-top: 50px;
+        }
+
+        .left a {
+            color: #00ff00
+        }
+    </style>
 </head>
+
 <body>
-    <!-- CONTENUTI QUA -->
+    <center>
+        <div class="header">
+            <h1>DASHBOARD DEVELOPER</h1>
+            <h2>Ciao {{utente}}!</h2>
+        </div>
+
+    </center>
+    <div class="left">
+        <a href="dashboard.php">HOME</a><br>
+        <a href="../index.php">INDEX</a><br>
+        <a href="credit.php">CREDITI</a><br>
+        <!--<?php 
+            if ($_SESSION['usertype'] === 'a'){
+                echo "<a href='crediti.php'>GESTIONE CREDITI</a><br>";
+            }
+            ?>-->
+        <a href="repo.php">GITHUB REPO</a>
+    </div>
+    <div class="right">
+        <h1>Benvenuto <?= $_SESSION['firstname'] ?> nella dashboard!</h1>
+        <p>
+            Si! Fa davvero schifo! Ha uno stile del cazzo...
+            <br><br>
+            Ed &egrave; per questo che l'ho fatta cos&igrave;: da adesso chiunque partecipi allo sviluppo della nuova dashboard verr&agrave; premiato con i crediti.<br>
+            pi&ugrave; crediti si ha, più si ha la possibilità di vincere dei premi.
+        </p>
+        <p>
+            <big>
+                <big>
+                    Ecco come contribuire:<br>
+                    - Scarica la repo da GITHUB <a href="https://maccacomputer/newdashboard">LINK</a><br>
+                    Il codice sarà sincronizzato con la repository, effetuerai un pull request e io lo accetter&ograve;.<br>
+                    - Inizia ad editare, vedr&ograve; i vari aggiornamenti, chi fa il miglior lavoro ricever&agrave; i corrispettivi crediti.
+                    <br><br>
+                    CHI AVRA&apos; PIU&apos; CREDITI VINCERA&apos; CREDITI!
+                    <br><br>
+                    Detto questo, buon coding da Macca!
+                </big>
+            </big>
+        </p>
+    </div>
 </body>
+
 </html>

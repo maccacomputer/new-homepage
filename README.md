@@ -1,4 +1,4 @@
-# NEW DASBOARD!
+# NEW DASHBOARD!
 Tutti i nuovi aggiornamenti verrano visualizzati qua!
 ## Come partecipare:
 1. Copia la repo:<br>
